@@ -1,0 +1,41 @@
+{
+  "name": "genpark-multilingual-avatar-lip-sync-video-compiler-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - 4K photorealistic talking-head video generator with neural lip-sync matching, voice clone preservation, and multi-language video localization.",
+  "author": "genpark",
+  "category": "generative-video",
+  "tags": [
+    "talking-avatar",
+    "lip-sync",
+    "video-localization",
+    "generative-video",
+    "heygen"
+  ],
+  "inputs": {
+    "script_text": {
+      "type": "string"
+    },
+    "target_languages": {
+      "type": "array"
+    },
+    "avatar_mesh_id": {
+      "type": "string"
+    }
+  },
+  "outputs": {
+    "video_job_id": {
+      "type": "string"
+    },
+    "neural_lip_sync_accuracy_score_pct": {
+      "type": "number"
+    },
+    "rendered_video_resolution": {
+      "type": "string"
+    },
+    "output_multilingual_m3u8_playlist": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
